@@ -1,4 +1,5 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +31,7 @@
 {
     padding-top: 50%;
     margin-top: 50px;
-    background-image: url(/Web/Web_Project/assets/img/home.jpg);
+    background-image: url(/assets/img/home.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -75,9 +76,120 @@
     background-color: #29b424;
     color: #fff;
 }
-#footer
+
+.book-table
 {
-    height: 200px;
+    background: url(/assets/img/ban11.jpg);
+    padding: 100px 0;
+}
+
+.title-book
+{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.title-book h2
+{
+    font-size: 50px;
+}
+
+.title-book p
+{
+    font-size: 18px;
+}
+
+#reservation-form label
+{
+    color: #fff;
+    font-size: 18px;
+}
+
+#reservation-form input
+{
+    padding: 10px 20px;
+}
+
+#submit_reservation
+{
+    margin-top: 35px;
+}
+
+footer
+{
+    background-color: #252428;
+}
+
+footer h3
+{
+    color: #fff;
+}
+
+footer p
+{
+    color: #777777;
+}
+
+#up-footer .ft-mt
+{
+    padding: 70px 0;
+}
+
+#up-footer .footer-socials
+{
+    margin-bottom: 20px;
+}
+
+#up-footer .footer-socials a
+{
+    font-size: 45px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#up-footer .socials-list
+{
+    font-size: 20px;
+}
+
+#up-footer .socials-list a i
+{
+    color: #000;
+    padding-right: 5px;
+}
+
+#up-footer .sub-form input
+{
+    padding: 12px 20px;
     width: 100%;
-    background-color: #2e2e2e;
+    border: 1px solid #e1e1e1;
+}
+
+#up-footer .sub-form button
+{
+    padding: 12px 20px;
+    margin-top: 10px;
+    border: 1px solid #ea462b;
+    color: #fff;
+    float: right;
+    background-color: #ea462b;
+}
+
+#up-footer .sub-form button:hover
+{
+    opacity: 0.7;
+}
+
+#up-footer .contact-list i
+{
+    width: 30px;
+    display: inline-block;
+}
+
+#down-footer p
+{
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #333333;
 }
