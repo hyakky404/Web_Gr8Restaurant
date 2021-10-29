@@ -5,44 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="header">
-        <ul class="nav">
-            <li>
-                <a href="#">Trang chủ</a>
-            </li>
-            <li>
-                <a href="#">Thực đơn</a>
-            </li>
-            <li>
-                <a href="#">Đặt bàn</a>
-            </li>
-            <li>
-                <a href="#">Tin tức</a>
-            </li>
-            <li>
-                <a href="#">Tuyển dụng</a>
-            </li>
-            <li>
-                <a href="#">Liên hệ</a>
-            </li>
-        </ul>
-    </div>
     <div>
-        <h1>Chào mừng</h1>
+        <nav class="navbar navbar-expand-sm navbar-light fixed">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thực đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khám phá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bộ sưu tập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Về chúng tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                      <button class="btn-order" type="submit">Đặt bàn ngay</button>
+                  </form>
+            </div>
+        </nav>
+      </div>
+      <div id="slider">
+          <div class="text-content">
+              <h2 class="text-heading">Nóng và sẵn sàng phục vụ</h2>
+              <div class="text-decription">Là một nhà hàng tuyệt vời, chúng tôi luôn phục vụ những món ăn tốt nhất cho mọi người</div>
+              <button class="btn-p1">Tìm hiểu thêm</button>
+          </div>
     </div>
-    <div>
-        <h1>Giới thiệu</h1>
+    <div id="footer">
+
     </div>
-    <div>
-        
-    </div>
-    <div></div>
-    <footer>
-        <p>Địa chỉ: </p>
-        <p>Liên hệ: </p>
-    </footer>
 </body>
 </html>

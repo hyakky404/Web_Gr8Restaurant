@@ -1,5 +1,83 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.fixed
+{
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.btn-order
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-order:hover
+{
+    background-color: #9df0b2;
+    color: #fff;
+}
+
+#slider
+{
+    padding-top: 50%;
+    margin-top: 50px;
+    background-image: url(/Web/Web_Project/assets/img/home.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#slider .text-content
+{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    left: 50%;
+    top: 30%;
+}
+
+#slider .text-heading
+{
+    font-weight: 400;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#slider .text-decription
+{
+    font-size: 20px;
+}
+
+.btn-p1
+{
+    border: 1px solid #424242;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #424242;
+    color: #fff;
+}
+
+.btn-p1:hover
+{
+    border: 1px solid #29b424;
+    background-color: #29b424;
+    color: #fff;
+}
+#footer
+{
+    height: 200px;
+    width: 100%;
+    background-color: #2e2e2e;
 }
