@@ -1,0 +1,462 @@
+/*Reset CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS All*/
+body
+{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Header*/
+#nav
+{
+    padding: 5px;
+    background-color: #fff;
+}
+
+#nav ul li a
+{
+    color: #23292c;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 26px 15px 26px;    
+}
+
+#nav ul li:hover a
+{
+    color: #ea462b;
+}
+
+#nav .nav-btn
+{
+    color: #ea462b;
+    background-color: #fff;
+    border: 1px solid #ea462b;
+}
+
+#nav .nav-btn a
+{
+    color: #23292c;
+}
+
+#nav .nav-btn:hover
+{
+    color: #fff;
+    background-color: #ea462b;
+}
+
+#nav .nav-btn:hover a
+{
+    color: #fff;
+    text-decoration: none;
+    background-color: #ea462b;
+}
+
+#nav .tab-active
+{
+    color: #ea462b;
+}
+
+#nav .nav-btn-login
+{
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.modal-btn-link a
+{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/*Modal*/
+.modal-body label
+{
+    margin: 5px 0;
+}
+
+.modal-body button
+{
+    width: 100%;
+}
+
+.modal-body p
+{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.modal-body .modal-btn-gg
+{
+    margin-bottom: 10px;
+    background-color: #4285F4;
+    border: 1px solid #4285F4;
+}
+
+.modal-body .modal-btn-fb
+{
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+.modal-body i
+{
+    padding: 0 3px;
+}
+
+.modal-body .modal-btn-gg:hover,
+.modal-body .modal-btn-fb:hover
+{
+    opacity: 0.9;
+}
+
+/*Main*/
+/*Banner*/
+.page-banner
+{
+    padding: 150px 0 75px;
+    background: url("/assets/img/Banner/page-ban.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.page-banner h1
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.page-banner p
+{
+    font-size: 22px;
+    color: #999999;
+}
+
+.page-banner h1,
+.page-banner p
+{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.page-banner-list
+{
+    margin: 16px 0;
+}
+
+.page-banner-list li
+{
+    list-style: none;
+    display: inline;
+}
+
+.page-banner-list li a
+{
+    color: #777777;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.page-banner-list li a:hover
+{
+    opacity: 0.8;
+}
+
+.page-banner-list i
+{
+    color: #777777;
+    font-size: 12px;
+    padding: 0 2px;
+}
+
+#menu
+{
+    padding-top: 100px;
+}
+
+.menu-list
+{
+    margin-bottom: 100px;
+}
+
+.menu-title
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-title h1
+{
+    font-size: 50px;
+    color: #23292c;
+    margin-bottom: 10px;
+}
+
+.menu-title p
+{
+    font-size: 18px;
+    color: #777777;
+}
+
+.menu-item
+{
+    background-color: #fafafa;
+    padding: 15px 30px 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-item img
+{
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    min-height: 290px;
+    margin-bottom: 30px;
+}
+
+.menu-item h3
+{
+    color: #23292c;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.menu-item .item-content
+{
+    padding: 0 20px;
+    margin-bottom: 5px;
+    counter-reset: #777777;
+    font-size: 16px;
+}
+
+.menu-item .item-price
+{
+    color: #ea462b;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600px;
+    display: block;
+}
+
+.menu-item button
+{
+    color: #23292c;
+    background-color: #fafafa;
+    padding: 10px 35px;
+    border: 1px solid #ea462b;
+    font-size: 18px;
+}
+
+.menu-item button:hover
+{
+    color: #fff;
+    background-color: #ea462b;
+}
+
+.pizza-menu
+{
+    background: url(/assets/img/Banner/menu-ban3.jpg) 0 0 repeat;
+}
+
+.pasta-menu
+{
+    background: url(/assets/img/Banner/menu-ban4.jpg) 0 0 repeat;
+}
+
+.bergers-menu
+{
+    background: url(/assets/img/Banner/menu-ban5.jpg) 0 0 repeat;
+}
+
+.page-nav
+{
+    margin-bottom: 20px;
+}
+
+/*Banner Reservation*/
+.reservation-banner
+{
+    padding: 130px 0;
+    text-align: center;
+    background: url(/assets/img/Banner/reservation-banner.jpg) center center no-repeat;
+}
+
+.reservation-content h2
+{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.reservation-content p
+{
+    color: #aaa;
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.reservation-content a
+{
+    padding: 10px 35px;
+    color: #fff;
+    font: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #ea462b;
+}
+
+.reservation-content a:hover
+{
+    color: #ea462b;
+    background-color: #fff;
+}
+
+/*Footer*/
+footer
+{
+    padding-top: 70px;
+    background-color: #252428;
+}
+
+footer h3
+{
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+footer p
+{
+    color: #777777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#up-footer .ft-mt
+{
+    margin-bottom: 50px;
+}
+
+#up-footer .footer-socials
+{
+    margin-bottom: 20px;
+}
+
+#up-footer .footer-socials a
+{
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#up-footer .socials-list
+{
+    font-size: 20px;
+}
+
+#up-footer .socials-list i
+{
+    color: #000;
+    padding-right: 3px;
+    display: inline-block;
+}
+
+#up-footer .socials-list a
+{
+    color: #777777;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#up-footer .socials-list a:hover
+{
+    opacity: 0.7;
+}
+
+#up-footer h3
+{
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+
+#up-footer .sub-btn
+{
+    color: #fff;
+    background-color: #ea462b;
+    border: 1px solid #ea462b;
+}
+
+#up-footer .sub-btn:hover
+{
+    opacity: 0.8;
+}
+
+#up-footer .contact-list i
+{
+    width: 30px;
+    display: inline-block;
+}
+
+#up-footer .contact-list p
+{
+    margin-bottom: 5px;
+}
+
+#down-footer p
+{
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #4c4c4d;
+}

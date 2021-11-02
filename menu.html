@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style-menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Navbar-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <img src="./assets/img/Logo/logo.png" alt="">
+                <!-- <a class="navbar-brand" href="index.html">Logo</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-active" href="#">Thực đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đặt bàn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg nav-btn nav-btn-login" type="button" data-toggle="modal" data-target="#modelId">Đăng nhập</button>
+                </div>
+            </div>
+        </nav>
+
+        <!--Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Đăng nhập</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                          <label for="acc">Tên đăng nhập</label>
+                          <input type="text" class="form-control" name="" id="acc" required aria-describedby="helpId" placeholder="Email hoặc số điện thoại">
+                        </div>
+                        <div class="form-group">
+                          <label for="pass">Mật khẩu</label>
+                          <input type="password" class="form-control" name="" id="pass" required placeholder="Mật khẩu">
+                        </div>
+                        <button type="button" class="btn btn-secondary">Đăng nhập</button>
+                        <p>hoặc</p>
+                        <button type="button" class="btn btn-primary modal-btn-gg"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>
+                        <button type="button" class="btn btn-primary modal-btn-fb"><i class="fab fa-facebook"></i> Đăng nhập bằng Facebook</button>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Chưa có tài khoản, hãy <a href="#">đăng kí thành viên</a> ngay!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <!--Banner-->
+        <div class="page-banner">
+            <div class="container">
+                <h1>Thực đơn của chúng tôi</h1>
+                <p>Thưởng thức ẩm thực tuyệt vời</p>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="page-banner-list">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <i class="fas fa-chevron-right"></i>
+                <li>
+                    <a href="#">Thực đơn</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="menu">
+            <!--Menu 1-->
+            <div class="menu-list pizza-menu">
+                <div class="menu-box">
+                    <div class="container">
+                        <div class="menu-title">
+                            <h1>Pizza</h1>
+                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu 2-->
+            <div class="menu-list pasta-menu">
+                <div class="menu-box">
+                    <div class="container">
+                        <div class="menu-title">
+                            <h1>Pasta</h1>
+                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/11.jpg" alt="">
+                                    <h3>Spaghetti all’Amatriciana</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/6.jpg" alt="">
+                                    <h3>Oakey Smokey Pizza</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu 3-->
+            <div class="menu-list bergers-menu">
+                <div class="menu-box">
+                    <div class="container">
+                        <div class="menu-title">
+                            <h1>Bergers</h1>
+                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/13.jpg" alt="">
+                                    <h3>Cheese Royale Burger</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/13.jpg" alt="">
+                                    <h3>Cheese Royale Burger</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="menu-item">
+                                    <img src="./assets/img/Menu/13.jpg" alt="">
+                                    <h3>Cheese Royale Burger</h3>
+                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
+                                    <p class="item-price">50.000đ</p>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Pagination-->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center page-nav">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">Trước</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">Sau</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Reservation-->
+        <div class="reservation-banner">
+            <div class="container">
+                <div class="reservation-content">
+                    <h2>Đặt bàn</h2>
+                    <p>Đến với nhà hàng, khách hàng sẽ thấy được không gian thoáng đãng, có những phòng riêng biệt cho hội họp hay sinh nhật với màu sắn tươi sáng.</p>
+                    <a href="#">Đặt bàn</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div id="up-footer">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="ft-mt">
+                            <div class="footer-socials">
+                                <a href="index.html">Logo</a>
+                            </div>
+                            <p>Hệ thống nhà hàng chúng tôi với các món ăn có hương vị đặc trưng, thơm ngon và luôn cập nhật nhiều món ăn mới hấp dẫn. Chúng tôi đảm bảo tiêu chí về độ tươi ngon, chất lượng và an toàn từ nguyên liệu tới các loại gia vị để bạn hoàn toàn yên tâm trải nghiệm ẩm thực tại chuỗi nhà hàng của chúng tôi.</p>
+                            <div class="socials-list">
+                                <a href="#" title="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-news ft-mt">
+                            <h3>Đăng kí nhận thông tin</h3>
+                            <p>Để nhận những thông tin mới nhất từ nhà hàng chúng tôi, hãy đăng kí nhận bản tin ngay.</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nhập email của bạn">
+                                <div class="input-group-append">
+                                  <button class="btn btn-success sub-btn" type="submit">Đăng kí</button>  
+                                 </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-list ft-mt">
+                            <h3>Liên hệ với chúng tôi</h3>
+                            <p><i class="fas fa-map-marker-alt"></i>Hà Nội, Việt Nam</p>
+                            <p><i class="fas fa-phone"></i>1900 0000</p>
+                            <p><i class="far fa-envelope"></i>support@email.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="down-footer">
+                <p>Copyright &copy; 2021 Nhóm 8. All rights reserved.</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
