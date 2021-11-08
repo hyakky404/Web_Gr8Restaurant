@@ -163,7 +163,7 @@ body
 .page-banner
 {
     padding: 150px 0 75px;
-    background: url("/assets/img/Banner/page-ban.jpg") center center no-repeat;
+    background: url("./assets/img/Banner/page-ban.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -329,7 +329,7 @@ body
 {
     padding: 130px 0;
     text-align: center;
-    background: url(/assets/img/Banner/reservation-banner.jpg) center center no-repeat;
+    background: url(./assets/img/Banner/reservation-banner.jpg) center center no-repeat;
 }
 
 .reservation-content h2
