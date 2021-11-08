@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực đơn</title>
+    <title>Thực đơn - Nhà hàng Gr8.</title>
+    <link rel="shortcut icon" href="./assets/ico/web.ico" type="image/x-icon">
+    <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style-menu.css">
+    <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Header-->
@@ -18,8 +23,10 @@
         <!--Navbar-->
         <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <img src="./assets/img/Logo/logo.png" alt="">
-                <!-- <a class="navbar-brand" href="index.html">Logo</a> -->
+                <a href="#" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    Gr8.
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +36,7 @@
                             <a class="nav-link" href="#">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tab-active" href="#">Thực đơn</a>
+                            <a class="nav-link active" href="#">Thực đơn</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Đặt bàn</a>
@@ -41,11 +48,16 @@
                             <a class="nav-link" href="#">Liên hệ</a>
                         </li>
                     </ul>
-                    <button class="btn btn-primary btn-lg nav-btn nav-btn-login" type="button" data-toggle="modal" data-target="#modelId">Đăng nhập</button>
+                    <div class="icons">
+                        <i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
+                        <div class="fas fa-heart" title="Yêu thích" data-toggle="modal" data-target="#modelId"></div>
+                        <div class="fas fa-shopping-cart" title="Giỏ hàng" data-toggle="modal" data-target="#modelId"></div>
+                        <div class="fas fa-user" id="user-login" title="Đăng nhập" data-toggle="modal" data-target="#modelId"></div>
+                    </div>
                 </div>
             </div>
         </nav>
-
+        
         <!--Modal -->
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -57,21 +69,17 @@
                             </button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group">
-                          <label for="acc">Tên đăng nhập</label>
-                          <input type="text" class="form-control" name="" id="acc" required aria-describedby="helpId" placeholder="Email hoặc số điện thoại">
-                        </div>
-                        <div class="form-group">
-                          <label for="pass">Mật khẩu</label>
-                          <input type="password" class="form-control" name="" id="pass" required placeholder="Mật khẩu">
-                        </div>
-                        <button type="button" class="btn btn-secondary">Đăng nhập</button>
-                        <p>hoặc</p>
-                        <button type="button" class="btn btn-primary modal-btn-gg"><i class="fab fa-google"></i> Đăng nhập bằng Google</button>
-                        <button type="button" class="btn btn-primary modal-btn-fb"><i class="fab fa-facebook"></i> Đăng nhập bằng Facebook</button>
-                    </div>
-                    <div class="modal-footer">
-                        <p>Chưa có tài khoản, hãy <a href="#">đăng kí thành viên</a> ngay!</p>
+                        <form action="">
+                            <input type="email" name="" class="login-box" placeholder="Nhập Email hoặc SĐT của bạn" required>
+                            <input type="password" name="" class="login-box" placeholder="Nhập mật khẩu của bạn" required>
+                            <div class="remember">
+                                <input type="checkbox" name="" id="remember-me">
+                                <label for="remember-me">Nhớ đăng nhập</label>
+                            </div>
+                            <input type="submit" value="Đăng nhập" class="btn login-btn">
+                        </form>
+                        <a href="#">Quên mật khẩu?</a>
+                        <a href="#" class="sign-in">Đăng kí</a>
                     </div>
                 </div>
             </div>
@@ -114,55 +122,55 @@
                                     <img src="./assets/img/Menu/6.jpg" alt="">
                                     <h3>Oakey Smokey Pizza</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">110.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/5.jpg" alt="">
+                                    <h3>White Rocotta Pizza</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">140.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/7.jpg" alt="">
+                                    <h3>Original Margherita Pizza</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">120.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/8.jpg" alt="">
+                                    <h3>Calzone</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">135.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/9.jpg" alt="">
+                                    <h3>Mercy Margarita</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">80.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/10.jpg" alt="">
+                                    <h3>Napoletana</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">90.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
@@ -184,26 +192,26 @@
                                     <img src="./assets/img/Menu/11.jpg" alt="">
                                     <h3>Spaghetti all’Amatriciana</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">110.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/12.jpg" alt="">
+                                    <h3>Spaghetti Carbonara</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">140.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
+                                    <img src="./assets/img/Menu/4.jpg" alt="">
+                                    <h3>Lasagna</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">120.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
@@ -225,26 +233,26 @@
                                     <img src="./assets/img/Menu/13.jpg" alt="">
                                     <h3>Cheese Royale Burger</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">110.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/13.jpg" alt="">
-                                    <h3>Cheese Royale Burger</h3>
+                                    <img src="./assets/img/Menu/14.jpg" alt="">
+                                    <h3>Single BBQ Chicken Burger</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">18.500đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="menu-item">
-                                    <img src="./assets/img/Menu/13.jpg" alt="">
-                                    <h3>Cheese Royale Burger</h3>
+                                    <img src="./assets/img/Menu/15.jpg" alt="">
+                                    <h3>The Double Barrel Meat</h3>
                                     <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">50.000đ</p>
-                                    <button>Thêm vào giỏ hàng</button>
+                                    <p class="item-price">125.000đ</p>
+                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
                         </div>
@@ -275,13 +283,12 @@
                 </li>
             </ul>
         </nav>
-
         <!--Reservation-->
         <div class="reservation-banner">
             <div class="container">
                 <div class="reservation-content">
                     <h2>Đặt bàn</h2>
-                    <p>Đến với nhà hàng, khách hàng sẽ thấy được không gian thoáng đãng, có những phòng riêng biệt cho hội họp hay sinh nhật với màu sắn tươi sáng.</p>
+                    <p>Đến với nhà hàng, khách hàng sẽ thấy được không gian thoáng đãng, có những phòng riêng biệt cho hội họp hay sinh nhật với màu sắc tươi sáng.</p>
                     <a href="#">Đặt bàn</a>
                 </div>
             </div>
@@ -293,43 +300,45 @@
         <div class="container">
             <div id="up-footer">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="ft-mt">
                             <div class="footer-socials">
-                                <a href="index.html">Logo</a>
-                            </div>
-                            <p>Hệ thống nhà hàng chúng tôi với các món ăn có hương vị đặc trưng, thơm ngon và luôn cập nhật nhiều món ăn mới hấp dẫn. Chúng tôi đảm bảo tiêu chí về độ tươi ngon, chất lượng và an toàn từ nguyên liệu tới các loại gia vị để bạn hoàn toàn yên tâm trải nghiệm ẩm thực tại chuỗi nhà hàng của chúng tôi.</p>
-                            <div class="socials-list">
-                                <a href="#" title="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="#" title="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" title="YouTube">
-                                    <i class="fab fa-youtube"></i>
+                                <a href="#" class="logo">
+                                    <i class="fas fa-utensils"></i>
+                                    Gr8.
                                 </a>
                             </div>
+                            <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sub-news ft-mt">
-                            <h3>Đăng kí nhận thông tin</h3>
-                            <p>Để nhận những thông tin mới nhất từ nhà hàng chúng tôi, hãy đăng kí nhận bản tin ngay.</p>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Nhập email của bạn">
-                                <div class="input-group-append">
-                                  <button class="btn btn-success sub-btn" type="submit">Đăng kí</button>  
-                                 </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="contact-list ft-mt">
-                            <h3>Liên hệ với chúng tôi</h3>
-                            <p><i class="fas fa-map-marker-alt"></i>Hà Nội, Việt Nam</p>
-                            <p><i class="fas fa-phone"></i>1900 0000</p>
-                            <p><i class="far fa-envelope"></i>support@email.com</p>
+                            <h3>Liên hệ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i>Q. Hà Đông, Tp. Hà Nội</p>
+                            <p><i class="fas fa-phone"></i>1900 1900</p>
+                            <p><i class="far fa-envelope"></i>hotro@email.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="time-info">
+                            <h3>Thời gian mở cửa</h3>
+                            <p>Thứ 2 - Thứ 6: Từ 8:15 đến 22:00</p>
+                            <p>Thứ 7: Từ 8:00 đến 23:00</p>
+                            <p>Chủ nhật: Từ 7:00 đến 23:30</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="socials-list">
+                            <h3>Liên kết mạng xã hội</h3>
+                            <p>
+                                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                            </p>
+                            <p>
+                                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                            </p>
+                            <p>
+                                <a href="#"><i class="fab fa-youtube"></i>YouTube</a>
+                            </p>
                         </div>
                     </div>
                 </div>
