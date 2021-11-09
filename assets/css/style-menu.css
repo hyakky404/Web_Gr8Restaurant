@@ -64,6 +64,7 @@ body
 }
 
 /*Header*/
+/*Navbar*/
 #nav
 {
     padding: 5px;
@@ -135,18 +136,6 @@ body
     color: var(--primary-color);
 }
 
-#nav .nav-btn-login
-{
-    padding: 10px 35px;
-    font-size: 18px;
-}
-
-.modal-btn-link a
-{
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
 /*Modal*/
 .modal-title
 {
@@ -201,28 +190,9 @@ body
     padding: 10px 0;
 }
 
-.modal-body .modal-btn-gg
-{
-    margin-bottom: 10px;
-    background-color: #4285F4;
-    border: 1px solid #4285F4;
-}
-
-.modal-body .modal-btn-fb
-{
-    background-color: #3b5998;
-    border: 1px solid #3b5998;
-}
-
 .modal-body i
 {
     padding: 0 3px;
-}
-
-.modal-body .modal-btn-gg:hover,
-.modal-body .modal-btn-fb:hover
-{
-    opacity: 0.9;
 }
 
 .modal-body a
@@ -239,6 +209,29 @@ body
 .modal-body .sign-in
 {
     float: right;
+}
+
+/*Back to top*/
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+  
+#myBtn:hover 
+{
+    opacity: 0.8;
 }
 
 /*Main*/
@@ -549,9 +542,13 @@ footer p
     display: inline-block;
 }
 
+#down-footer
+{
+    border-top: 1px solid #4c4c4d;
+}
+
 #down-footer p
 {
     margin: 0;
     padding: 20px 0;
-    border-top: 1px solid #4c4c4d;
 }
