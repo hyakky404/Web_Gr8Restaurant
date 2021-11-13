@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực đơn - Nhà hàng Gr8.</title>
+    <title>Thực đơn - Gr8.</title>
     <link rel="shortcut icon" href="./assets/ico/web.ico" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -50,42 +50,12 @@
                     </ul>
                     <div class="icons">
                         <i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
-                        <div class="fas fa-heart" title="Yêu thích" data-toggle="modal" data-target="#modelId"></div>
-                        <div class="fas fa-shopping-cart" title="Giỏ hàng" data-toggle="modal" data-target="#modelId"></div>
-                        <div class="fas fa-user" id="user-login" title="Đăng nhập" data-toggle="modal" data-target="#modelId"></div>
                     </div>
                 </div>
             </div>
         </nav>
-        
-        <!--Modal -->
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Đăng nhập</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <input type="text" name="" class="login-box" placeholder="Nhập Email hoặc SĐT của bạn" required>
-                            <input type="password" name="" class="login-box" placeholder="Nhập mật khẩu của bạn" required>
-                            <div class="remember">
-                                <input type="checkbox" name="" id="remember-me">
-                                <label for="remember-me">Nhớ đăng nhập</label>
-                            </div>
-                            <input type="submit" value="Đăng nhập" class="btn login-btn">
-                        </form>
-                        <a href="#">Quên mật khẩu?</a>
-                        <a href="#" class="sign-in">Đăng kí</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!--Bạc to home-->
+        <!--Back to home-->
         <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
     </header>
 
@@ -111,152 +81,278 @@
         </div>
 
         <div id="menu">
-            <!--Menu 1-->
-            <div class="menu-list pizza-menu">
-                <div class="menu-box">
-                    <div class="container">
-                        <div class="menu-title">
-                            <h1>Pizza</h1>
-                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+            <!--Menu-->
+            <div class="menu-list">
+                <div class="container">
+                    <div class="menu-title menu-pizza">
+                        <h2>Pizza</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th1.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Oakey Smokey Pizza</span>
+                                                <span class="item-price">110.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th2.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">White Ricotta Pizza</span>
+                                                <span class="item-price">140.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th3.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Original Margherita Pizza</span>
+                                                <span class="item-price">120.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/6.jpg" alt="">
-                                    <h3>Oakey Smokey Pizza</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">110.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/5.jpg" alt="">
-                                    <h3>White Rocotta Pizza</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">140.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/7.jpg" alt="">
-                                    <h3>Original Margherita Pizza</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">120.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/8.jpg" alt="">
-                                    <h3>Calzone</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">135.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/9.jpg" alt="">
-                                    <h3>Mercy Margarita</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">80.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/10.jpg" alt="">
-                                    <h3>Napoletana</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">90.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th4.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Calzone</span>
+                                                <span class="item-price">130.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th5.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Mercy Margarita</span>
+                                                <span class="item-price">98.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--Menu 2-->
-            <div class="menu-list pasta-menu">
-                <div class="menu-box">
-                    <div class="container">
-                        <div class="menu-title">
-                            <h1>Pasta</h1>
-                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+            <div class="menu-list">
+                <div class="container">
+                    <div class="menu-title menu-pasta">
+                        <h2>Mì ống</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th6.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Spaghetti all’Amatriciana</span>
+                                                <span class="item-price">110.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th7.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Spaghetti Carbonara</span>
+                                                <span class="item-price">140.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/11.jpg" alt="">
-                                    <h3>Spaghetti all’Amatriciana</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">110.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/12.jpg" alt="">
-                                    <h3>Spaghetti Carbonara</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">140.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/4.jpg" alt="">
-                                    <h3>Lasagna</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">120.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th8.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Lasagna</span>
+                                                <span class="item-price">120.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--Menu 3-->
-            <div class="menu-list bergers-menu">
-                <div class="menu-box">
-                    <div class="container">
-                        <div class="menu-title">
-                            <h1>Bergers</h1>
-                            <p>Hãy thử các món ăn mới từ chúng tôi.</p>
+            <div class="menu-list">
+                <div class="container">
+                    <div class="menu-title menu-bergers">
+                        <h2>Bánh mì kẹp</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th9.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">The Double Barrel Meat Feast</span>
+                                                <span class="item-price">110.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th10.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Classic Havana Burger</span>
+                                                <span class="item-price">140.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/13.jpg" alt="">
-                                    <h3>Cheese Royale Burger</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">110.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th11.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Single BBQ Chicken Burger</span>
+                                                <span class="item-price">120.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th12.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Havana Speical Burger Combo</span>
+                                                <span class="item-price">130.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/14.jpg" alt="">
-                                    <h3>Single BBQ Chicken Burger</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">18.500đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list">
+                <div class="container">
+                    <div class="menu-title menu-deserts">
+                        <h2>Món tráng miệng</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th13.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">The Double Barrel Meat Feast</span>
+                                                <span class="item-price">110.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th14.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Classic Havana Burger</span>
+                                                <span class="item-price">140.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="menu-item">
-                                    <img src="./assets/img/Menu/15.jpg" alt="">
-                                    <h3>The Double Barrel Meat</h3>
-                                    <p class="item-content">Tomato sauce, mozzarella, anchovies, oregano, basil</p>
-                                    <p class="item-price">125.000đ</p>
-                                    <button><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</button>
-                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th15.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Single BBQ Chicken Burger</span>
+                                                <span class="item-price">120.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th16.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title">Havana Speical Burger Combo</span>
+                                                <span class="item-price">130.000đ</span>
+                                            </h4>
+                                            <p>Smoke mozzarella, basil and picorino Romano</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

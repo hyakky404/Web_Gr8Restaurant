@@ -136,81 +136,6 @@ body
     color: var(--primary-color);
 }
 
-/*Modal*/
-.modal-title
-{
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-.modal .login-box
-{
-    width: 100%;
-    padding: 12px 0;
-    margin: 8px 0;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-}
-
-.modal .login-box:focus 
-{
-    border-bottom: 2px solid #000;
-}
-
-.modal .login-btn
-{
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px 0;
-    border: 2px solid #ccc;
-    border-radius: 50px;
-}
-
-.modal .login-btn:hover
-{
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.modal-body label
-{
-    margin: 5px 0;
-}
-
-.modal-body button
-{
-    width: 100%;
-}
-
-.modal-body p
-{
-    text-align: center;
-    padding: 10px 0;
-}
-
-.modal-body i
-{
-    padding: 0 3px;
-}
-
-.modal-body a
-{
-    color: var(--primary-color);
-}
-
-.modal-body a:hover
-{
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.modal-body .sign-in
-{
-    float: right;
-}
-
 /*Back to top*/
 #myBtn 
 {
@@ -293,122 +218,111 @@ body
     padding: 0 2px;
 }
 
+/*Menu*/
 #menu
 {
-    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
-.menu-list
+#menu .menu-list .menu-title
+{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding: 80px 30px;
+    margin-bottom: 30px;
+}
+
+#menu .menu-pizza
+{
+    background: url("../img/Banners/menu-ban2.jpg") center center no-repeat;
+}
+
+#menu .menu-pasta
+{
+    background: url("../img/Banners/menu-ban3.jpg") center center no-repeat;
+}
+
+#menu .menu-bergers
+{
+    background: url("../img/Banners/menu-ban4.jpg") center center no-repeat;
+}
+
+#menu .menu-deserts
+{
+    background: url("../img/Banners/menu-ban5.jpg") center center no-repeat;
+}
+
+#menu .menu-list li
+{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#menu .menu-list .img-menu
+{
+    margin-right: 20px;
+}
+
+#menu .menu-list .img-menu img
+{
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+}
+
+#menu .menu-content
+{
+    padding-top: 8px;
+    width: 100%;
+}
+
+#menu .menu-content h4
+{
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+#menu .menu-content h4 span
+{
+    padding: 3px 0;
+}
+
+#menu .menu-content .item-title
+{
+    font-size: 18px;
+    color: var(--black-color);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#menu .menu-content .item-price
+{
+    font-size: 18px;
+    float: right;
+    color: var(--primary-color);
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+#menu .menu-content p
+{
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+#menu .menu-list
 {
     margin-bottom: 100px;
 }
 
-.menu-title
-{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.menu-title h1
-{
-    font-size: 50px;
-    color: var(--black-color);
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.menu-title p
-{
-    font-size: 18px;
-    color: var(--text-color);
-}
-
-.menu-item
-{
-    background-color: #fafafa;
-    padding: 15px 30px 40px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.menu-item img
-{
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-    min-height: 290px;
-    margin-bottom: 30px;
-}
-
-.menu-item h3
-{
-    color: var(--black-color);
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 28px;
-    margin-bottom: 5px;
-}
-
-.menu-item .item-content
-{
-    padding: 15px 20px;
-    margin-bottom: 5px;
-    color: var(--text-color);
-    font-size: 16px;
-}
-
-.menu-item .item-price
-{
-    color: var(--primary-color);
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    display: block;
-}
-
-.menu-item button
-{
-    color: var(--black-color);
-    font-weight: 600;
-    background-color: #fafafa;
-    padding: 15px 35px;
-    border: 1px solid var(--primary-color);
-    font-size: 18px;
-    outline: none;
-}
-
-.menu-item button i
-{
-    padding-right: 5px;
-}
-
-.menu-item button:hover
-{
-    color: var(--white-color);
-    background-color: var(--primary-color);
-}
-
-.pizza-menu
-{
-    background: url("../img/Banners/menu-ban2.jpg") 0 0 repeat;
-}
-
-.pasta-menu
-{
-    background: url("../img/Banners/menu-ban3.jpg") 0 0 repeat;
-}
-
-.bergers-menu
-{
-    background: url("../img/Banners/menu-ban4.jpg") 0 0 repeat;
-}
-
+/*Pagination*/
 .page-nav
 {
     margin-bottom: 20px;
 }
 
-/*Pagination*/
 .page-link
 {
     color: var(--primary-color);
@@ -430,7 +344,7 @@ body
 {
     padding: 130px 0;
     text-align: center;
-    background: url("../img/Banners/menu-ban5.jpg") center center no-repeat;
+    background: url("../img/Banners/menu-ban6.jpg") center center no-repeat;
 }
 
 .reservation-content h2
