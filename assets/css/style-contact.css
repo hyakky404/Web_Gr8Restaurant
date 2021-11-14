@@ -215,16 +215,12 @@ footer p {
 	display: inline-block;
 }
 
-#down-footer {
+#down-footer p {
 	margin: 0;
 	padding-bottom: 20px;
 	text-align: center;
 }
 
-#down-footer p {
-	margin: 0;
-	padding: 20px 0;
-}
 ul li {
 	list-style-type: none;
 	display: inline-block;
