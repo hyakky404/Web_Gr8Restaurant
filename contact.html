@@ -1,0 +1,192 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Liên Hệ</title>
+	<link rel="shortcut icon" href="./assets/ico/web.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="./assets/css/style-contact.css">
+	<!--JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/9d1d818a60.js"></script>
+</head>
+
+<body>
+	<header>
+		<!--Navbar-->
+		<nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<a href="index.html" class="logo">
+					<i class="fas fa-utensils"></i>
+					Gr8.
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="home.html">Trang chủ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="menu.html">Thực đơn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="table.html">Đặt bàn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">Giới thiệu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="contact.html">Liên hệ</a>
+						</li>
+					</ul>
+					<div class="icons">
+						<i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--Back to home-->
+		<button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+		<!--Main-->
+		<div class="page-banner">
+			<div class="container">
+				<h1>Liên hệ</h1>
+				<p>Liên lạc với chúng tôi</p>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="page-banner-list">
+				<li>
+					<a href="home.html">Trang chủ</a>
+				</li>
+				<i class="fas fa-chevron-right"></i>
+				<li>
+					<a href="contact.html">Liên hệ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="contact-box">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="open-info">
+							<h3>Giờ mở cửa</h3>
+							<div class="info-line">
+								<p>
+									<i class="fa fa-clock-o"></i>
+									<span><b>Thứ 2 - Thứ 6:</b></span> 8:15 - 22:00 <br>
+									<span class="dm"><b>Thứ 7:</b></span> 8:00 - 23:00 <br>
+									<span class="dm"><b>Chủ nhật:</b></span> 7:00 - 23:30
+								</p>
+							</div>
+							<div class="info-line">
+								<p>
+									<i class="fa fa-calendar-check-o"></i>
+									<span><b>Thời gian đặt trước:</b></span> 24/7
+								</p>
+							</div>
+						</div>
+						<div class="contact-info">
+							<h3>Thông tin liên hệ</h3>
+							<p>
+								<i class="fas fa-map-marker-alt ttlh"></i>
+								<span>Số 3 Cầu Giấy, Đống Đa, Hà Nội</span>
+							</p>
+							<p>
+								<i class="fa fa-phone"></i>
+								<span>1900 0000</span>
+							</p>
+							<p>
+								<i class="fa fa-envelope"></i>
+								<span>hotro@email.com</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<form id="contact-form">
+							<label for="name"><b>Tên:</b></label>
+							<input name="name" id="name" type="text" placeholder="Nhập tên">
+							<label for="mail"><b>Email:</b></label>
+							<input name="mail" id="mail" type="text" placeholder="Nhập email">
+							<label for="comment"><b>Tin nhắn:</b></label>
+							<textarea name="comment" id="comment" placeholder="Nhập tin nhắn"></textarea>
+							<input type="submit" id="submit_contact" value="Gửi">
+							<div id="msg" class="message"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--Footer-->
+	<footer>
+		<div class="container">
+			<div id="up-footer">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ft-mt">
+							<div class="footer-socials">
+								<a href="index.html" class="logo">
+									<i class="fas fa-utensils"></i>
+									Gr8.
+								</a>
+							</div>
+							<p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="contact-list ft-mt">
+							<h3>Liên hệ</h3>
+							<p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Đống Đa, Hà Nội</p>
+							<p><i class="fas fa-phone"></i>1900 1900</p>
+							<p><i class="far fa-envelope"></i>hotro@email.com</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="time-info ft-mt">
+							<h3>Thời gian mở cửa</h3>
+							<p>Thứ 2 - Thứ 6: Từ 8:15 đến 22:00</p>
+							<p>Thứ 7: Từ 8:00 đến 23:00</p>
+							<p>Chủ nhật: Từ 7:00 đến 23:30</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="socials-list ft-mt">
+							<h3>Theo dõi chúng tôi</h3>
+							<p>
+								<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+							</p>
+							<p>
+								<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+							</p>
+							<p>
+								<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fab fa-youtube"></i>YouTube</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="down-footer">
+				<p>Copyright &copy; 2021 Gr8. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
