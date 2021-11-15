@@ -280,6 +280,7 @@ body
     width: 100%;
     height: 50px;
     padding-left: 10px;
+    border: 1px solid #e1e1e1;
 }
 .form-text{
     margin-top: 10px;
@@ -287,6 +288,7 @@ body
     height: 100px;
     padding-top: 10px;
     padding-left: 10px;
+    border: 1px solid #e1e1e1;
 }
 
 /*Banner Reservation*/
