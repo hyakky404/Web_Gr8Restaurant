@@ -159,6 +159,29 @@ body
     opacity: 0.8;
 }
 
+/*Back to top*/
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+  
+#myBtn:hover 
+{
+    opacity: 0.8;
+}
+
 /*Main*/
 /*Banner*/
 .page-banner
@@ -257,7 +280,6 @@ body
     width: 100%;
     height: 50px;
     padding-left: 10px;
-    border: 1px solid #D4CECE;
 }
 .form-text{
     margin-top: 10px;
@@ -265,7 +287,6 @@ body
     height: 100px;
     padding-top: 10px;
     padding-left: 10px;
-    border: 1px solid #D4CECE;
 }
 
 /*Banner Reservation*/
