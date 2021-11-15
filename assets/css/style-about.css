@@ -216,165 +216,80 @@ body
     padding: 0 2px;
 }
 
-/*Menu*/
-#menu
+/*Main*/
+#about-content
 {
-    margin-bottom: 50px;
+    margin: 50px 0 80px 0;
 }
 
-#menu .menu-list h2
+#about-content .img-1 img
 {
-    font-size: 50px;
-    text-align: center;
-    padding: 80px 30px;
-    margin-bottom: 30px;
-}
-
-#menu .menu-pizza
-{
-    background: url("../img/Banners/menu-ban2.jpg") center center no-repeat;
-}
-
-#menu .menu-pasta
-{
-    background: url("../img/Banners/menu-ban3.jpg") center center no-repeat;
-}
-
-#menu .menu-bergers
-{
-    background: url("../img/Banners/menu-ban4.jpg") center center no-repeat;
-}
-
-#menu .menu-deserts
-{
-    background: url("../img/Banners/menu-ban5.jpg") center center no-repeat;
-}
-
-#menu .menu-list li
-{
-    display: flex;
-    margin-bottom: 25px;
-}
-
-#menu .menu-list .img-menu
-{
-    margin-right: 20px;
-}
-
-#menu .menu-list .img-menu img
-{
-    border: 1px solid #d7d7d7;
-    border-radius: 50%;
-}
-
-#menu .menu-content
-{
-    padding-top: 8px;
     width: 100%;
+    border-radius: 10px;
 }
 
-#menu .menu-content h4
-{
-    margin-bottom: 0;
-    line-height: 20px;
-}
-
-#menu .menu-content h4 span
-{
-    padding: 3px 0;
-}
-
-#menu .menu-content .item-title
+#about-content .ab-1 span
 {
     font-size: 18px;
-    color: var(--black-color);
-    font-weight: 600;
-    line-height: 20px;
-}
-
-#menu .menu-content .item-price
-{
-    font-size: 18px;
-    float: right;
-    color: var(--primary-color);
-    padding-left: 10px;
-    font-weight: 600;
-}
-
-#menu .menu-content p
-{
-    font-size: 16px;
     color: var(--text-color);
-    line-height: 1.4;
-    margin: 10px 0;
-}
-
-#menu .menu-list
-{
-    margin-bottom: 100px;
-}
-
-/*Pagination*/
-.page-nav
-{
     margin-bottom: 20px;
 }
 
-.page-link
+#about-content .ab-1 p
 {
-    color: var(--primary-color);
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
-.page-link:hover
+#about-content .header-2
 {
-    color: var(--primary-color);
-}
-
-.page-item.active .page-link
-{
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
-
-/*Banner Reservation*/
-.reservation-banner
-{
-    padding: 130px 0;
     text-align: center;
-    background: url("../img/Banners/menu-ban6.jpg") center center no-repeat;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
-.reservation-content h2
+#about-content h5
 {
-    color: var(--white-color);
-    font-size: 50px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.reservation-content p
+#about-content .about-cheft
 {
-    color: #aaa;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+#about-content .cheft img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#about-content .p-2
+{
+    text-align: center;
     font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    line-height: 1.4;
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 
-.reservation-content a
+#about-content .about-cm
 {
-    padding: 10px 35px;
-    color: var(--white-color);
-    font: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: var(--primary-color);
+    padding-top: 15px;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.reservation-content a:hover
+#about-content .cm .cm-img
 {
-    color: var(--primary-color);
-    background-color: var(--white-color);
+    text-align: center;
 }
 
 /*Footer*/

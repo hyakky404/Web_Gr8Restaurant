@@ -241,8 +241,9 @@ label {
 
 .page-banner h1 {
 	color: var(--white-color);
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: 500;
+	margin-bottom: 18px;
 }
 
 .page-banner p {

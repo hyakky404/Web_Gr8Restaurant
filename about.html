@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi - Gr8.</title>
+    <link rel="shortcut icon" href="./assets/ico/web.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style-about.css">
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Navbar-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    Gr8.
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Thực đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="table.html">Đặt bàn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div class="icons">
+                        <i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Back to home-->
+        <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+    </header>
+
+    <!--Main-->
+    <main>
+        <!--Banner-->
+        <div class="page-banner">
+            <div class="container">
+                <h1>Về chúng tôi</h1>
+                <p>tìm hiểu thêm về nhà hàng của chúng tôi</p>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="page-banner-list">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <i class="fas fa-chevron-right"></i>
+                <li>
+                    <a href="#">Về chúng tôi</a>
+                </li>
+            </ul>
+        </div>
+        <div id="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <section class="img-1">
+                            <img src="./assets/img/About/dau-bep-viet-nam-6.jpg">
+                        </section>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ab-1">
+                            <h1>Câu chuyện của chúng tôi</h1>
+                            <span>Khám phá câu chuyện của chúng tôi</span> 
+                            <p>Nhà hàng được xây dựng trên tình yêu và niềm đam mê ẩm thực của chúng tôi. Tất cả bắt đầu từ ước mơ của hai người phục vụ nhà hàng trẻ là A và B. Với tình yêu, niềm đam mê và khát vọng mở nhà hàng của riêng mình ngày càng mãnh liệt, cuối cùng chúng tôi đã thực hiện được ước mơ - mở nhà hàng Gr8.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="header-2">Chúng tôi là ai</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cheft">
+                            <img src="./assets/img/About/daubep1.jpg"><br>
+                            <h5>Đầu bếp: Nguyễn Huỳnh Vi Vương</h5>
+                            <p class="about-cheft">Có 18 năm kinh nghiệm từng đạt giải nhất cuộc thi Bếp trẻ năm 2003, giải nhất Ẩm thực miền biển năm 2005, á quân Chiếc thìa vàng năm 2015.</p>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cheft">
+                            <img src="./assets/img/About/jack lee.jpg"><br>
+                            <h5>Đầu bếp: Jack Lee</h5>
+                            <p class="about-cheft">Có 20 năm kinh nghiệm từng chế biến các món ăn cho cho sao Hollywood và tham gia nhiều show truyền hình về ẩm thực. </p>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cheft">
+                            <img src="./assets/img/About/dau bep.jpg"><br>
+                            <h5>Đầu bếp: Christine Hà</h5>
+                            <p class="about-cheft">Là quán quân vua đầu bếp MasterChef 2012 tại Mỹ, tham gia Vua đầu bếp Việt Nam 2013-2014, và là giám khảo Vua đầu bếp Việt Nam 2015.</p><br>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="header-2">Nhận xét về chúng tôi</h1>
+                <p class="p-2">Họ nói về chúng tôi</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cm">
+                            <div class="cm-img">
+                                <img src="./assets/img/About/cm.jpg">
+                            </div>
+                            <h5>Lê Thu Trang</h5>
+                            <p class="about-cm">Khi bước vào nhà hàng, bạn sẽ được chào đón bởi khung cảnh tráng lệ, ngồi ở bất kì đâu bạn cũng có một cái nhìn tuyệt vời ra khu bếp - nơi bạn có thể thấy các đầu bếp dang làm việc.<br>Thực đơn nhà hàng vô cùng phong phú, chất lượng món ăn cực kì tốt, trang trí đơn giản nhưng lại đệp mắt, giá cả hợp lý.<br>Chất lượng phục vụ tốt, nhân viên ở đây rất niệt tình.</p>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cm">
+                            <div class="cm-img">
+                                <img src="./assets/img/About/cm.jpg">
+                            </div>
+                            <h5>Trần Xuân Mai</h5>
+                            <p class="about-cm">Khi bước vào nhà hàng, bạn sẽ được chào đón bởi khung cảnh tráng lệ, ngồi ở bất kì đâu bạn cũng có một cái nhìn tuyệt vời ra khu bếp - nơi bạn có thể thấy các đầu bếp dang làm việc.<br>Thực đơn nhà hàng vô cùng phong phú, chất lượng món ăn cực kì tốt, trang trí đơn giản nhưng lại đệp mắt, giá cả hợp lý.<br>Chất lượng phục vụ tốt, nhân viên ở đây rất niệt tình.</p>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <section class="cm">
+                            <div class="cm-img">
+                                <img src="./assets/img/About/cm.jpg">
+                            </div>
+                            <h5>Jack Lee </h5>
+                            <p class="about-cm">Khi bước vào nhà hàng, bạn sẽ được chào đón bởi khung cảnh tráng lệ, ngồi ở bất kì đâu bạn cũng có một cái nhìn tuyệt vời ra khu bếp - nơi bạn có thể thấy các đầu bếp dang làm việc.<br>Thực đơn nhà hàng vô cùng phong phú, chất lượng món ăn cực kì tốt, trang trí đơn giản nhưng lại đệp mắt, giá cả hợp lý.<br>Chất lượng phục vụ tốt, nhân viên ở đây rất niệt tình.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div id="up-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="ft-mt">
+                            <div class="footer-socials">
+                                <a href="index.html" class="logo">
+                                    <i class="fas fa-utensils"></i>
+                                    Gr8.
+                                </a>
+                            </div>
+                            <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-list ft-mt">
+                            <h3>Liên hệ</h3>
+                            <p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Đống Đa, HN</p>
+                            <p><i class="fas fa-phone"></i>1900 1900</p>
+                            <p><i class="far fa-envelope"></i>hotro@email.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="time-info ft-mt">
+                            <h3>Thời gian mở cửa</h3>
+                            <p>Thứ 2 - Thứ 6: Từ 8:15 đến 22:00</p>
+                            <p>Thứ 7: Từ 8:00 đến 23:00</p>
+                            <p>Chủ nhật: Từ 7:00 đến 23:30</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="socials-list ft-mt">
+                            <h3>Theo dõi chúng tôi</h3>
+                            <p>
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+                            </p>
+                            <p>
+                                <a href="https://youtu.be/dQw4w9WgXcQ"><i class="fab fa-youtube"></i>YouTube</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="down-footer">
+                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId">Gr8.</a> All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title">Thành viên</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <p>Nguyễn Đình Quý</p>
+                            <p>Vương Tiến Thành</p>
+                            <p>Trần Xuân Tiến</p>
+                            <p>Lê Thu Trang</p>
+                            <p>Nguyễn Thị Kim Hằng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
