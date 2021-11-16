@@ -96,6 +96,8 @@ section {
     color: var(--black-color);
     font-size: 2.5rem;
     font-weight: bolder;
+    font-family: "Zilla Slab", sans-serif;
+    text-decoration: none;
 }
 
 .header .logo i {
@@ -105,10 +107,11 @@ section {
 /* Navbar */
 .header .navbar a {
     color: var(--black-color);
-    font-size: 1.8rem;
+    font-size: 16px;
     font-weight: 400;
-    padding: 0.5rem 1.5rem;
-    margin: 0 0.8rem;
+    line-height: 16px;
+    padding: 10px 12px;  
+    margin: 16px 8px;
     border-radius: 0.5rem;
 }
 
@@ -116,6 +119,7 @@ section {
 .header .navbar a:hover {
     color: var(--white-color);
     background-color: var(--primary-color);
+    text-decoration: none;
 }
 
 .header .icons i,
@@ -164,6 +168,32 @@ section {
     opacity: 0.8;
 }
 
+.modal-search .modal-sch-main
+{
+    border-radius: 10px;
+}
+
+.modal-search .search-btn
+{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.modal-search .search-btn i
+{
+    color: var(--white-color);
+}
+
+.modal-search .search-btn:hover
+{
+    opacity: 0.8;
+}   
+
+.modal-search .search-box
+{
+    padding: 23px;
+}
+
 /* Slider */
 .slider {
     height: 625px;
@@ -171,7 +201,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: url("./assets/img/slider/slider.jpg") no-repeat;
+    background: url("../img/Slider/slider.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -217,7 +247,7 @@ a.slider-btn:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: url("./assets/img/banner/banner.jpg") center center no-repeat;
+    background: url("../img/banner/banner.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -266,7 +296,7 @@ a.banner-btn:hover {
 }
 
 .popular-menu-section {
-    background: #111 url("./assets/img/product/banner.jpg") center center no-repeat;
+    background: #111 url("../img/product/banner.jpg") center center no-repeat;
     background-size: cover;
     padding-bottom: 140px;
 }
@@ -427,7 +457,7 @@ a.menu-btn:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("./assets/img/banner/banner.jpg") center center no-repeat;
+    background: url("../img/banner/banner.jpg") center center no-repeat;
     background-size: cover;
     padding: 15rem 9.6rem;
 }

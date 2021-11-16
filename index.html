@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Trang chủ - Gr8.</title>
     <link rel="shortcut icon" href="./assets/ico/web.ico" type="image/x-icon">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./assets/css/style-home.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/ico/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style-home.css">
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
-    <title>Trang chủ - Gr8.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
@@ -40,8 +44,27 @@
             </div>
 
              <!--Back to home-->
-            <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button> -->
+            <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
         </header>
+        <!-- Modal -->
+        <div class="modal-search">
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document" >
+                    <div class="modal-content modal-sch-main">
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control search-box" placeholder="Bạn cần tìm kiếm những gì?" aria-label="Bạn cần tìm kiếm những gì?" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary search-btn" type="button" title="Tìm kiếm">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Custom header end -->
 
         <!-- Slider start -->
@@ -211,23 +234,23 @@
                     <div class="grid__row">
                         <div class="grid__col-third">
                             <div class="footer-contact">
-                                <h4>CONTACT US</h4>
+                                <h4>Liên hệ</h4>
                                 <p>
                                     <i class="fas fa-map-marker-alt"></i>
-                                    Lớp CNTT5 - K61, Đại học giao thông vận tải
+                                    Số 3 Cầu Giấy, Đống Đa, HN
                                 </p>
                                 <p>
                                     <i class="fas fa-phone-alt"></i>
-                                    (+84) 12 345 6789
+                                    1900 1900
                                 </p>
                                 <p>
                                     <i class="fas fa-envelope"></i>
-                                    gr8@gmail.com
+                                    hotro@email.com
                                 </p>
                             </div>
 
                             <div class="footer-contact">
-                                <h4>OPENING TIMES</h4>
+                                <h4>Thời gian mở cửa</h4>
                                 <p>
                                     Thứ 2 - Thứ 6: Từ 8:15 đến 22:00
                                 </p>
@@ -241,7 +264,7 @@
                         </div>
                         <div class="grid__col-third">
                             <div class="footer-newswriter">
-                                <h4>NEWSWRITER</h4>
+                                <h4>Bảng tin</h4>
                                 <span>
                                     <i class="fas fa-utensils"></i>
                                     <a href="">@Gr8</a>
@@ -249,7 +272,7 @@
                                 <p>
                                     Gr8 là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng. 
                                 </p>
-                                <span>8 Nov 2021</span>
+                                <span>8/11/2021</span>
                             </div>
 
                             <div class="footer-newswriter">
@@ -260,12 +283,12 @@
                                 <p>
                                     Hãy quay trở lại thưởng thức các món ăn tại Gr8 đi thoai !! blink blink
                                 </p>
-                                <span>8 Nov 2021</span>
+                                <span>8/11/2021</span>
                             </div>
                         </div>
                         <div class="grid__col-third">
                             <div class="footer-gallery">
-                                <h4>GALLERY</h4>
+                                <h4>Thư viện</h4>
                                 <div class="footer-gallery-img">
                                     <a href="./assets/image/gallery/1.jpg">
                                         <img src="./assets/img/gallery/1.jpg" alt="">
@@ -320,10 +343,8 @@
                         </div>
                         <div class="footer-copyright">
                             <p>
-                                Copyright © 2021 All rights reserved | This template is made with
-                                <i class="fas fa-heart"></i>
-                                by
-                                <a href="">Gr8</a>
+                                Copyright © 2021 All rights reserved | Website này được thiết kế bởi
+                                <a href="">Nhóm 8</a>
                             </p>
                         </div>
                     </div>

@@ -19,7 +19,7 @@
 </head>
 <body>
     <!--Header-->
-    <header>
+    <header id="header">
         <!--Navbar-->
         <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
@@ -49,11 +49,31 @@
                         </li>
                     </ul>
                     <div class="icons">
-                        <i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
+                        <div class="fas fa-search" id="user-login" title="Tìm kiếm" data-toggle="modal" data-target="#modelId"></div>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal -->
+        <div class="modal-search">
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document" >
+                    <div class="modal-content modal-sch-main">
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control search-box" placeholder="Bạn cần tìm kiếm những gì?" aria-label="Bạn cần tìm kiếm những gì?" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary search-btn" type="button" title="Tìm kiếm">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Back to home-->
         <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
@@ -166,7 +186,7 @@
             <div class="menu-list">
                 <div class="container">
                     <div class="menu-title menu-pasta">
-                        <h2>Mì ống</h2>
+                        <h2>Mì Ý</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -235,7 +255,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">The Double Barrel Meat Feast</span>
+                                                <span class="item-title">Bánh mì kẹp thịt hai tầng</span>
                                                 <span class="item-price">110.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -247,7 +267,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Classic Havana Burger</span>
+                                                <span class="item-title">Bánh mì kẹp cổ điển</span>
                                                 <span class="item-price">140.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -265,7 +285,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Single BBQ Chicken Burger</span>
+                                                <span class="item-title">Bánh mì kẹp thịt</span>
                                                 <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -277,7 +297,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Havana Speical Burger Combo</span>
+                                                <span class="item-title">Bánh mì kẹp đặc biệt</span>
                                                 <span class="item-price">130.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -304,7 +324,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">The Double Barrel Meat Feast</span>
+                                                <span class="item-title">Bánh</span>
                                                 <span class="item-price">110.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -316,7 +336,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Classic Havana Burger</span>
+                                                <span class="item-title">Trà</span>
                                                 <span class="item-price">140.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -334,7 +354,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Single BBQ Chicken Burger</span>
+                                                <span class="item-title">Kem</span>
                                                 <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -346,7 +366,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Havana Speical Burger Combo</span>
+                                                <span class="item-title">Bánh kem</span>
                                                 <span class="item-price">130.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -359,7 +379,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!--Pagination-->
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center page-nav">
@@ -443,12 +463,12 @@
                 </div>
             </div>
             <div id="down-footer">
-                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId">Gr8.</a> All rights reserved.</p>
+                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId2">Gr8.</a> All rights reserved.</p>
             </div>
         </div>
-        
+
         <!-- Modal -->
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                         <div class="modal-header">
