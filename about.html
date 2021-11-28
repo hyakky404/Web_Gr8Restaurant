@@ -49,11 +49,31 @@
                         </li>
                     </ul>
                     <div class="icons">
-                        <i class="fas fa-search" id="search-icon" title="Tìm kiếm"></i>
+                        <div class="fas fa-search" id="user-login" title="Tìm kiếm" data-toggle="modal" data-target="#modelId"></div>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal -->
+        <div class="modal-search">
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document" >
+                    <div class="modal-content modal-sch-main">
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control search-box" placeholder="Bạn cần tìm kiếm những gì?" aria-label="Bạn cần tìm kiếm những gì?" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary search-btn" type="button" title="Tìm kiếm">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Back to home-->
         <button onclick="topFunction()" id="myBtn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
@@ -163,26 +183,33 @@
         <div class="container">
             <div id="up-footer">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="ft-mt">
                             <div class="footer-socials">
                                 <a href="index.html" class="logo">
                                     <i class="fas fa-utensils"></i>
                                     Gr8.
                                 </a>
+                                <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+                                <div class="socials-list">
+                                    <a href="https://www.facebook.com" title="Facebook"><i><i class="fab fa-facebook"></i></i></a>
+                                    <a href="https://www.instagram.com" title="Instagram"><i><i class="fab fa-instagram"></i></i></a>
+                                    <a href="https://youtu.be/dQw4w9WgXcQ" title="YouTube"><i><i class="fab fa-youtube"></i></i></a>
+                                </div>
                             </div>
-                            <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+                            
+                            
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="contact-list ft-mt">
                             <h3>Liên hệ</h3>
-                            <p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Đống Đa, HN</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Quận Đống Đa, TP. Hà Nội</p>
                             <p><i class="fas fa-phone"></i>1900 1900</p>
                             <p><i class="far fa-envelope"></i>hotro@email.com</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="time-info ft-mt">
                             <h3>Thời gian mở cửa</h3>
                             <p>Thứ 2 - Thứ 6: Từ 8:15 đến 22:00</p>
@@ -190,29 +217,16 @@
                             <p>Chủ nhật: Từ 7:00 đến 23:30</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="socials-list ft-mt">
-                            <h3>Theo dõi chúng tôi</h3>
-                            <p>
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
-                            </p>
-                            <p>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
-                            </p>
-                            <p>
-                                <a href="https://youtu.be/dQw4w9WgXcQ"><i class="fab fa-youtube"></i>YouTube</a>
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div id="down-footer">
-                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId">Gr8.</a> All rights reserved.</p>
+                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId2">Nhóm 8.</a></p>
             </div>
         </div>
         
         <!-- Modal -->
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                         <div class="modal-header">

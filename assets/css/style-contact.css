@@ -67,6 +67,27 @@ body {
 	color: var(--primary-color);
 }
 
+.modal-search .modal-sch-main
+{
+    border-radius: 10px;
+}
+
+.modal-search .search-btn
+{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.modal-search .search-btn i
+{
+    color: var(--white-color);
+}
+
+.modal-search .search-btn:hover
+{
+    opacity: 0.8;
+}
+
 /*Back to top*/
 #myBtn 
 {
@@ -91,74 +112,6 @@ body {
 }
 .page-banner-list {
 	padding-top: 100px;
-}
-footer {
-	padding-top: 70px;
-	background-color: #252428;
-}
-
-footer h3 {
-	color: var(--white-color);
-	margin-bottom: 4px;
-}
-
-footer p {
-	color: var(--text-color);
-	line-height: 1.6;
-	margin-bottom: 5px;
-	font-size: 16px
-}
-
-#up-footer .ft-mt {
-	margin-bottom: 50px;
-}
-
-#up-footer .footer-socials {
-	margin-bottom: 20px;
-}
-
-#up-footer .footer-socials a {
-	font-size: 30px;
-	text-decoration: none;
-	color: var(--white-color);
-	font-family: "Zilla Slab", sans-serif;
-	font-weight: bolder;
-}
-
-#up-footer .footer-socials a i {
-	color: var(--primary-color);
-	padding-right: 3px;
-}
-
-#up-footer .socials-list i {
-	color: var(--white-color);
-	padding-right: 8px;
-}
-
-#up-footer .socials-list a {
-	color: var(--text-color);
-	text-decoration: none;
-}
-
-#up-footer .socials-list a:hover {
-	opacity: 0.7;
-}
-
-#up-footer h3 {
-	font-size: 22px;
-	margin-bottom: 15px;
-	line-height: 28px;
-}
-
-#up-footer .contact-list i {
-	width: 30px;
-	display: inline-block;
-}
-
-#down-footer p {
-	margin: 0;
-	padding-bottom: 20px;
-	text-align: center;
 }
 
 ul li {
@@ -271,4 +224,104 @@ label {
 }
 .dm {
 	padding-left: 21px;
+}
+
+footer
+{
+    padding-top: 70px;
+    background-color: #252428;
+}
+
+footer h3
+{
+    color: var(--white-color);
+    margin-bottom: 4px;
+}
+
+footer p
+{
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#up-footer .ft-mt
+{
+    margin-bottom: 50px;
+}
+
+#up-footer .footer-socials
+{
+    margin-bottom: 20px;
+}
+
+#up-footer .footer-socials a
+{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: "Zilla Slab", sans-serif;
+    font-weight: bolder;
+}
+
+#up-footer .footer-socials a i
+{
+    color: var(--primary-color);
+    padding-right: 3px;
+}
+
+#up-footer .socials-list a i
+{
+    color: var(--white-color);
+    padding-right: 4px;
+    font-size: 16px;
+}
+
+#up-footer .socials-list a
+{
+    color: var(--text-color);
+    text-decoration: none;
+    
+}
+
+#up-footer .socials-list a:hover
+{
+    opacity: 0.7;
+}
+
+#up-footer h3
+{
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+
+#up-footer .contact-list i
+{
+    width: 30px;
+    display: inline-block;
+}
+
+#down-footer
+{
+    border-top: 1px solid #3f4141;
+}
+
+#down-footer p
+{
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#down-footer a
+{
+    color: var(--primary-color);
+}
+
+#down-footer a:hover
+{
+    text-decoration: none;
+    opacity: 0.8;
 }

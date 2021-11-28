@@ -43,10 +43,6 @@ table {
 }
 
 /*CSS All*/
-*
-{
-    transition: all 0.2s linear;
-}
 :root 
 {
     --primary-color: #ee4d2b;
@@ -242,6 +238,63 @@ body
 }
 
 /*Menu*/
+.modal-food .modal-thumbnail img
+{
+    width: 100%;
+}
+
+.modal-food .img-food img
+{
+    width: 15%;
+}
+
+.modal-food-info .modal-info-head
+{
+    font-weight: bolder;
+}
+
+.modal-food-info .head-info
+{
+    font-weight: 600;
+}
+
+.modal-food-info .f-info
+{
+    margin: 20px 0;
+}
+
+.modal-food-info p
+{
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.modal-food-info .item-price
+{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.modal-btn
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-close
+{
+    background-color: var(--text-color);
+}
+
+.modal-btn:hover
+{
+    opacity: 0.8;
+}
+
 #menu
 {
     margin-bottom: 50px;
@@ -309,12 +362,18 @@ body
     padding: 3px 0;
 }
 
-#menu .menu-content .item-title
+#menu .menu-content .item-title a
 {
     font-size: 18px;
     color: var(--black-color);
     font-weight: 600;
     line-height: 20px;
+}
+
+#menu .menu-content .item-title a:hover
+{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 #menu .menu-content .item-price
@@ -419,7 +478,8 @@ footer p
 {
     color: var(--text-color);
     line-height: 1.6;
-    margin-bottom: 5px;
+    margin: 10px 0;
+    text-align: justify;
 }
 
 #up-footer .ft-mt
@@ -447,10 +507,11 @@ footer p
     padding-right: 3px;
 }
 
-#up-footer .socials-list i
+#up-footer .socials-list a i
 {
     color: var(--white-color);
-    padding-right: 8px;
+    padding-right: 4px;
+    font-size: 16px;
 }
 
 #up-footer .socials-list a
@@ -478,9 +539,25 @@ footer p
     display: inline-block;
 }
 
+#down-footer
+{
+    border-top: 1px solid #3f4141;
+}
+
 #down-footer p
 {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+#down-footer a
+{
+    color: var(--primary-color);
+}
+
+#down-footer a:hover
+{
+    text-decoration: none;
+    opacity: 0.8;
 }

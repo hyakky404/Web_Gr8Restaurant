@@ -81,6 +81,55 @@
 
     <!--Main-->
     <main>
+        <!-- Modal -->
+        <div class="modal fade" id="food-content" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Thông tin món ăn</h5>
+                        </div>
+                    <div class="modal-body modal-food">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="modal-thumbnail">
+                                        <img src="./assets/img/Menu/5.jpg" alt="Pizza thịt xông khói">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="modal-food-info">
+                                        <h4>Pizza thịt xông khói</h4>
+                                        <div class="f-info">
+                                            <span class="head-info">Thành phần: </span>
+                                            <span class="content-info">Thịt bò xay, ngô, sốt BBQ, pho mai.</span>
+                                        </div>
+                                        <p>Được chế biến với nguyên liệu tốt nhất.</p>
+                                        <p class="item-price">Giá: 110.000đ</p>
+                                        <div class="img-food">
+                                            <h5>Một số hình ảnh</h5>
+                                            <a href="./assets/img/Menu/5.jpg">
+                                                <img src="./assets/img/Menu/5.jpg" alt="Pizza">
+                                            </a>
+                                            <a href="./assets/img/Menu/5.jpg">
+                                                <img src="./assets/img/Menu/5.jpg" alt="">
+                                            </a>
+                                            <a href="./assets/img/Menu/5.jpg">
+                                                <img src="./assets/img/Menu/5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="table.html"><button class="modal-btn">Đặt bàn ngay</button></a>
+                        <button class="modal-btn btn-close" type="button" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Banner-->
         <div class="page-banner">
             <div class="container">
@@ -117,7 +166,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Oakey Smokey Pizza</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Pizza thịt xông khói</a></span>
                                                 <span class="item-price">110.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -129,7 +178,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">White Ricotta Pizza</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Pizza thịt bò</a></span>
                                                 <span class="item-price">140.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -141,7 +190,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Original Margherita Pizza</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Pizza hải sản</a></span>
                                                 <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -159,7 +208,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Calzone</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Calzone</a></span>
                                                 <span class="item-price">130.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -171,65 +220,8 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Mercy Margarita</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Pizza xúc xích</a></span>
                                                 <span class="item-price">98.000đ</span>
-                                            </h4>
-                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-list">
-                <div class="container">
-                    <div class="menu-title menu-pasta">
-                        <h2>Mì Ý</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="menu-box">
-                                <ul>
-                                    <li>
-                                        <div class="img-menu">
-                                            <img src="./assets/img/Menu/th6.jpg" alt="">
-                                        </div>
-                                        <div class="menu-content">
-                                            <h4>
-                                                <span class="item-title">Spaghetti all’Amatriciana</span>
-                                                <span class="item-price">110.000đ</span>
-                                            </h4>
-                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="img-menu">
-                                            <img src="./assets/img/Menu/th7.jpg" alt="">
-                                        </div>
-                                        <div class="menu-content">
-                                            <h4>
-                                                <span class="item-title">Spaghetti Carbonara</span>
-                                                <span class="item-price">140.000đ</span>
-                                            </h4>
-                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="menu-box">
-                                <ul>
-                                    <li>
-                                        <div class="img-menu">
-                                            <img src="./assets/img/Menu/th8.jpg" alt="">
-                                        </div>
-                                        <div class="menu-content">
-                                            <h4>
-                                                <span class="item-title">Lasagna</span>
-                                                <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
                                         </div>
@@ -255,7 +247,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh mì kẹp thịt hai tầng</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh mì kẹp thịt hai tầng</a></span>
                                                 <span class="item-price">110.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -267,7 +259,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh mì kẹp cổ điển</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh mì kẹp cổ điển</a></span>
                                                 <span class="item-price">140.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -285,7 +277,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh mì kẹp thịt</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh mì kẹp thịt</a></span>
                                                 <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -297,8 +289,77 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh mì kẹp đặc biệt</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh mì kẹp đặc biệt</a></span>
                                                 <span class="item-price">130.000đ</span>
+                                            </h4>
+                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-list">
+                <div class="container">
+                    <div class="menu-title menu-pasta">
+                        <h2>Mì Ý</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th6.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Mì Amatriciana</a></span>
+                                                <span class="item-price">110.000đ</span>
+                                            </h4>
+                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th7.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Mì Carbonara</a></span>
+                                                <span class="item-price">140.000đ</span>
+                                            </h4>
+                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-box">
+                                <ul>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th8.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Mì Lasagna</a></span>
+                                                <span class="item-price">120.000đ</span>
+                                            </h4>
+                                            <p>Được chế biến với nguyên liệu tốt nhất</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-menu">
+                                            <img src="./assets/img/Menu/th8.jpg" alt="">
+                                        </div>
+                                        <div class="menu-content">
+                                            <h4>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Mì Spaghetti</a></span>
+                                                <span class="item-price">100.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
                                         </div>
@@ -324,7 +385,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh</a></span>
                                                 <span class="item-price">110.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -336,7 +397,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Trà</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Trà</a></span>
                                                 <span class="item-price">140.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -354,7 +415,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Kem</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Kem</a></span>
                                                 <span class="item-price">120.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -366,7 +427,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4>
-                                                <span class="item-title">Bánh kem</span>
+                                                <span class="item-title"><a href="" data-toggle="modal" data-target="#food-content">Bánh kem</a></span>
                                                 <span class="item-price">130.000đ</span>
                                             </h4>
                                             <p>Được chế biến với nguyên liệu tốt nhất</p>
@@ -419,26 +480,33 @@
         <div class="container">
             <div id="up-footer">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="ft-mt">
                             <div class="footer-socials">
                                 <a href="index.html" class="logo">
                                     <i class="fas fa-utensils"></i>
                                     Gr8.
                                 </a>
+                                <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+                                <div class="socials-list">
+                                    <a href="https://www.facebook.com" title="Facebook"><i><i class="fab fa-facebook"></i></i></a>
+                                    <a href="https://www.instagram.com" title="Instagram"><i><i class="fab fa-instagram"></i></i></a>
+                                    <a href="https://youtu.be/dQw4w9WgXcQ" title="YouTube"><i><i class="fab fa-youtube"></i></i></a>
+                                </div>
                             </div>
-                            <p>Gr8. là một lựa chọn tốt cho những người vừa muốn có không gian ẩm thực sang trọng mà giá cả phải chăng.</p>
+                            
+                            
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="contact-list ft-mt">
                             <h3>Liên hệ</h3>
-                            <p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Đống Đa, HN</p>
+                            <p><i class="fas fa-map-marker-alt"></i>Số 3 Cầu Giấy, Quận Đống Đa, TP. Hà Nội</p>
                             <p><i class="fas fa-phone"></i>1900 1900</p>
                             <p><i class="far fa-envelope"></i>hotro@email.com</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="time-info ft-mt">
                             <h3>Thời gian mở cửa</h3>
                             <p>Thứ 2 - Thứ 6: Từ 8:15 đến 22:00</p>
@@ -446,24 +514,11 @@
                             <p>Chủ nhật: Từ 7:00 đến 23:30</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="socials-list ft-mt">
-                            <h3>Theo dõi chúng tôi</h3>
-                            <p>
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
-                            </p>
-                            <p>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
-                            </p>
-                            <p>
-                                <a href="https://youtu.be/dQw4w9WgXcQ"><i class="fab fa-youtube"></i>YouTube</a>
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div id="down-footer">
-                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId2">Gr8.</a> All rights reserved.</p>
+                <p>Copyright &copy; 2021 <a href="" data-toggle="modal" data-target="#modelId2">Nhóm 8.</a></p>
             </div>
         </div>
 
