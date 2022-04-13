@@ -1,4 +1,4 @@
-# Gr8. Restaurant
+# Nhà hàng Gr8.
 Bài tập lớn môn Thiết kế Web
 
 ## Mô tả
@@ -35,4 +35,4 @@ Nhóm 8 - CNTT5:
   * 201200364
   * 201200113
 
-### 2021. Đại học Giao thông Vận tải
+#### 2021. Đại học Giao thông Vận tải
