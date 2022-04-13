@@ -1,9 +1,14 @@
-# Bài tập lớn môn Thiết kế Web
-## Đề tài: Trang web quản lí nhà hàng
+# Gr8. Restaurant
+Bài tập lớn môn Thiết kế Web
 
-[Trang web](https://miyamizu95.github.io/Gr8_Restaurant/)
+## Mô tả
+Trang web quản lí nhà hàng và là bài tập lớn để đánh giá quá trình học tập của môn học.
 
-Các mục lớn:
+Trang web sử dụng Bootstrap, Slick và một số công cụ khác để xây dựng.
+
+Trang web: https://miyamizu95.github.io/Gr8_Restaurant/
+
+Các mục lớn của trang web:
 
   1. [Trang chủ](https://miyamizu95.github.io/Gr8_Restaurant/)
   2. [Thực đơn](https://miyamizu95.github.io/Gr8_Restaurant/menu.html)
@@ -11,13 +16,23 @@ Các mục lớn:
   4. [Giới thiệu](https://miyamizu95.github.io/Gr8_Restaurant/about.html)
   5. [Liên hệ](https://miyamizu95.github.io/Gr8_Restaurant/contact.html)
 
-Thành viên:
+## Một số hình ảnh
+![image](https://user-images.githubusercontent.com/85392867/163226724-0d267da1-2fdc-4c79-b952-1dd82c94131f.png)
+![image](https://user-images.githubusercontent.com/85392867/163226621-5191a13f-37e5-498f-963b-44588415a81f.png)
+![image](https://user-images.githubusercontent.com/85392867/163226768-75ccd740-6452-4275-bf3c-0072e6d78b1d.png)
+![image](https://user-images.githubusercontent.com/85392867/163226807-a564128c-1f85-4b7a-a1d5-3d0b1dcef609.png)
+![image](https://user-images.githubusercontent.com/85392867/163227644-94a35ff8-5bdf-4472-86d0-b983794cb408.png)
 
-  * Nguyễn Đình Quý
-  * Vương Tiến Thành
-  * Lê Thu Trang
-  * Trần Xuân Tiến
-  * Nguyễn Thị Kim Hằng
+## Tài liệu tham khảo
+Trang web mẫu: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
 
-#### Giảng viên hướng dẫn: Lại Mạnh Dũng
-#### Đại học Giao thông Vận tải
+## Credits
+Nhóm 8 - CNTT5:
+
+  * 201200304
+  * 201200332
+  * 201200370
+  * 201200364
+  * 201200113
+
+### 2021. Đại học Giao thông Vận tải
