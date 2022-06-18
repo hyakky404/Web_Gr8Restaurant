@@ -297,6 +297,7 @@ body
     height: 50px;
     padding-left: 10px;
     border: 1px solid #e1e1e1;
+    border-radius: 10px;
 }
 .form-text{
     margin-top: 10px;
@@ -305,6 +306,7 @@ body
     padding-top: 10px;
     padding-left: 10px;
     border: 1px solid #e1e1e1;
+    border-radius: 10px;
 }
 
 /*Banner Reservation*/
@@ -322,6 +324,7 @@ body
     text-decoration: none;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    border-radius: 20px;
 }
 
 .reservation-content input:hover
