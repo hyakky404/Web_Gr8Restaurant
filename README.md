@@ -27,7 +27,7 @@ Các mục lớn của trang web:
 Trang web mẫu: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
 
 ## Credits
-Nhóm 8 - CNTT5:
+Nhóm 8 - CNTT5 - K61:
 
   * 201200304
   * 201200332
