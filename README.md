@@ -6,7 +6,7 @@ Trang web quản lí nhà hàng và là bài tập lớn để đánh giá quá 
 
 Trang web sử dụng Bootstrap, Slick và một số công cụ khác để xây dựng.
 
-Trang web: https://miyamizu95.github.io/Gr8_Restaurant/
+Trang web: https://miyamizu95.github.io/Web_Gr8Restaurant/
 
 Các mục lớn của trang web:
 
