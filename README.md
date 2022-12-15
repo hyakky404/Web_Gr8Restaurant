@@ -17,14 +17,27 @@ Các mục lớn của trang web:
   5. [Liên hệ](https://miyamizu95.github.io/Gr8_Restaurant/contact.html)
 
 ## Một số hình ảnh
-![image](https://user-images.githubusercontent.com/85392867/163226724-0d267da1-2fdc-4c79-b952-1dd82c94131f.png)
-![image](https://user-images.githubusercontent.com/85392867/163226621-5191a13f-37e5-498f-963b-44588415a81f.png)
-![image](https://user-images.githubusercontent.com/85392867/163226768-75ccd740-6452-4275-bf3c-0072e6d78b1d.png)
-![image](https://user-images.githubusercontent.com/85392867/163226807-a564128c-1f85-4b7a-a1d5-3d0b1dcef609.png)
-![image](https://user-images.githubusercontent.com/85392867/163227644-94a35ff8-5bdf-4472-86d0-b983794cb408.png)
+  * Trang chủ
+  ![image](https://user-images.githubusercontent.com/85392867/163226724-0d267da1-2fdc-4c79-b952-1dd82c94131f.png)
+  
+  * Thực đơn
+  ![image](https://user-images.githubusercontent.com/85392867/163226621-5191a13f-37e5-498f-963b-44588415a81f.png)
+  
+  * Đặt bàn
+  ![image](https://user-images.githubusercontent.com/85392867/163226768-75ccd740-6452-4275-bf3c-0072e6d78b1d.png)
+  
+  * Liên hệ
+  ![image](https://user-images.githubusercontent.com/85392867/163226807-a564128c-1f85-4b7a-a1d5-3d0b1dcef609.png)
+  
+  * Về chúng tôi
+  ![image](https://user-images.githubusercontent.com/85392867/163227644-94a35ff8-5bdf-4472-86d0-b983794cb408.png)
 
 ## Tài liệu tham khảo
-Trang web mẫu: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
+W3Schools: https://www.w3schools.com
+
+Nguồn lấy Template: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
+
+Template: https://nunforest.com/koad-demo/index.html
 
 ## Credits
 Nhóm 8 - CNTT5 - K61:
