@@ -26,10 +26,10 @@ Các mục lớn của trang web:
   * Đặt bàn
   ![image](https://user-images.githubusercontent.com/85392867/163226768-75ccd740-6452-4275-bf3c-0072e6d78b1d.png)
   
-  * Liên hệ
+  * Giới thiệu
   ![image](https://user-images.githubusercontent.com/85392867/163226807-a564128c-1f85-4b7a-a1d5-3d0b1dcef609.png)
   
-  * Về chúng tôi
+  * Liên hệ
   ![image](https://user-images.githubusercontent.com/85392867/163227644-94a35ff8-5bdf-4472-86d0-b983794cb408.png)
 
 ## Tài liệu tham khảo
