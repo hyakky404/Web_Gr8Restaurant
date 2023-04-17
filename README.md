@@ -35,12 +35,12 @@ Các mục lớn của trang web:
 ## Tài liệu tham khảo
 W3Schools: https://www.w3schools.com
 
-Nguồn lấy Template: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
-
 Template: https://nunforest.com/koad-demo/index.html
 
-## Credits
-Nhóm 8 - CNTT5 - K61:
+Nguồn lấy Template: https://themeforest.net/item/koad-restaurant-bistro-html-template/28076978
+
+## Thành viên
+Nhóm 08 - CNTT5 - K61:
 
   * 201200304
   * 201200332
